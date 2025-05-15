@@ -16,3 +16,4 @@ Scenario Outline: Driver controls the train
         Given the main key in position [occupied] 
         When the driver presses the [horn] button
         Then the horn should sound for [5] seconds
+        And a driver is in [cab A]
