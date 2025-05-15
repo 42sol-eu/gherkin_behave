@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Behave",
+            "type": "python",
+            "request": "launch",
+            "program": "poetry",
+            "args": [
+                "behave",
+                "--no-capture"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}
