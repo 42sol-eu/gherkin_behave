@@ -53,10 +53,13 @@ def activate_train(context):
     context.train.main_key_position = "off"
 
 @given('a train is active')
-@when('the train is active')
 def step_given_train_active(context):
     if not context.train.active:
         activate_train(context)
+
+@when('the train is active')
+def step_when_train_active(context):
+    step_given_train_active(context)
 
 @regex_step('(a|the|) driver is in [{cab}]')
 def step_given_driver_in_cab(context, cab):
